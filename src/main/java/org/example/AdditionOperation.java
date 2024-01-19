@@ -1,6 +1,6 @@
 package org.example;
 
-public class Addition implements Operation {
+public class AdditionOperation implements Operation {
     @Override
     public Float execute(Float[] parameters) {
         return parameters[0] + parameters[1];

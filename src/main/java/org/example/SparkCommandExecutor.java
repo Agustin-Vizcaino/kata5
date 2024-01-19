@@ -33,6 +33,7 @@ public class SparkCommandExecutor {
     }
 
     private Command.Input input() {
+        System.out.println(request.queryParams());
         return queryParam -> request.queryParams(queryParam);
     }
 
