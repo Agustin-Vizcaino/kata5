@@ -1,11 +1,12 @@
-package org.example;
+package org.operations;
 
-public class MultiplicationOperation implements Operation {
+import org.operations.Operation;
 
-    String[] parameters = new String[] { "multiplicand", "multiplier" };
+public class SubtractionOperation implements Operation {
+    String[] parameters = new String[] { "minuend", "subthraend" };
     @Override
     public Float execute(Float[] parameters) {
-        return parameters[0] * parameters[1];
+        return parameters[0] - parameters[1];
     }
 
     @Override

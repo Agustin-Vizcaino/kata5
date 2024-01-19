@@ -1,6 +1,6 @@
-package org.example;
+package org.operations;
 
-import java.util.HashMap;
+import org.operations.Operation;
 
 public class AdditionOperation implements Operation {
     String[] parameters = new String[] { "summand1", "summand2" };

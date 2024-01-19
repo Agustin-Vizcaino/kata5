@@ -1,6 +1,6 @@
-package org.example;
+package org.operations;
 
-import java.util.HashMap;
+import org.operations.Operation;
 
 public class DivisionOperation implements Operation {
     String[] parameters = new String[] { "dividend", "divisor" };

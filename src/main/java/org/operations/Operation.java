@@ -1,4 +1,4 @@
-package org.example;
+package org.operations;
 
 import java.util.HashMap;
 
