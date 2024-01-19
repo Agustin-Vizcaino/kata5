@@ -1,13 +1,21 @@
 package org.example;
 
+import java.util.HashMap;
+
 public class DivisionOperation implements Operation {
+    String[] parameters = new String[] { "dividend", "divisor" };
     @Override
-    public Float execute(Float[] parameters) {
-        return parameters[0] / parameters[1];
+    public Float execute(Float[] iparameters) {
+        return iparameters[0] / iparameters[1];
     }
 
     @Override
-    public Boolean checkParameters(Float[] parameters) {
-        return parameters.length == 2 && parameters[1] != 0;
+    public String[] getParameterNames() {
+        return parameters;
+    }
+
+    @Override
+    public Boolean checkParameters(Float[] iparameters) {
+        return iparameters.length == 2 && iparameters[1] != 0;
     }
 }
