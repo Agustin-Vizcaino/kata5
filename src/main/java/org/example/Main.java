@@ -12,7 +12,7 @@ public class Main {
 
         SparkCommandExecutor.put("factorial", new FactorialCommand());
         SparkCommandExecutor.put("addition", new CommandOperationAdapter(new AdditionOperation()));
-        SparkCommandExecutor.put("addition", new CommandOperationAdapter(new SubtractionOperation()));
+        SparkCommandExecutor.put("subtraction", new CommandOperationAdapter(new SubtractionOperation()));
         SparkCommandExecutor.put("division", new CommandOperationAdapter(new DivisionOperation()));
         SparkCommandExecutor.put("multiplication", new CommandOperationAdapter(new MultiplicationOperation()));
         Spark.port(8080);

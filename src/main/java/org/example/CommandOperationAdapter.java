@@ -23,17 +23,17 @@ public class CommandOperationAdapter implements Command {
                 for (String i : operation.getParameterNames()) {
                     String buffer = input.get(i);
                     if (buffer == null || !isFloat(buffer)) {
-                        return 502;
+                        return 400;
                     }
                     parList.add(Float.parseFloat(buffer));
                 }
                 try {
                     par = parList.toArray(par);
-                    if (!operation.checkParameters(par)) return 502;
+                    if (!operation.checkParameters(par)) return 400;
                     return 200;
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
-                    return 502;
+                    return 400;
                 }
             }
 
